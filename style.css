@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263326;
+  background-color: #faf8f0;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  background:
+    linear-gradient(rgba(30, 75, 45, 0.75), rgba(30, 75, 45, 0.75)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2f6b3f;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #365c2f;
+  margin-top: 0;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.light {
+  background-color: #eef4e4;
+  max-width: none;
+}
+
+.light > h2,
+.light > .cards {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 26px;
+  background-color: #f2c94c;
+  color: #263326;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e0b83f;
+  transform: translateY(-2px);
+}
+
+.download-box {
+  max-width: 850px;
+  margin: 40px auto 70px auto;
+  padding: 40px 25px;
+  text-align: center;
+  background-color: #2f6b3f;
+  color: white;
+  border-radius: 20px;
+}
+
+.download-box h2 {
+  color: white;
+}
+
+.secondary {
+  background-color: white;
+  color: #2f6b3f;
+}
+
+.secondary:hover {
+  background-color: #f4f4f4;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #1f2d1f;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 70px 20px;
+  }
+}
